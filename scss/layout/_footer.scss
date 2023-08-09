@@ -1,0 +1,4 @@
+footer {
+    height: 50px;
+    @include special-text(null, null, 2px, 0.85rem, null, uppercase, null, null);
+}

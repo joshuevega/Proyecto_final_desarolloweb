@@ -1,0 +1,34 @@
+// Font & text control
+/*
+* Mixins:
+* special-text($m: 0, $p: 0, $ls: null, $fs: 1rem, $fw: 400, $tt: none, $td: none, $c: $color-light-3)
+*
+* Variables:
+* m: margin [ all | vertical -> horizontal | top -> left -> bottom | top -> right -> bottom -> left ]
+* p: padding [ all | vertical -> horizontal | top -> left -> bottom | top -> right -> bottom -> left ]
+* ls: letter-spacing
+* fs: font-size
+* fw: font-weight
+* tt: text-transform
+* td: text-decoration
+* c: color
+*
+* Colores:
+* $color-light-1: #FFFCF2;
+* $color-light-2: #E8EDED;
+* $color-light-3: #CCC5B9;
+* $color-dark-1: #403D39;
+* $color-dark-2: #141414;
+* $color-accent: #FFA640;
+*/
+
+@mixin special-text($m: 0, $p: 0, $ls: null, $fs: 1rem, $fw: 400, $tt: none, $td: none, $c: $color-light-3) {
+    margin: $m;
+    padding: $p;
+    letter-spacing: $ls;
+    font-size: $fs;
+    font-weight: $fw;
+    text-transform: $tt;
+    text-decoration: $td;
+    color: $c;
+}
